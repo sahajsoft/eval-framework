@@ -417,6 +417,8 @@ Use this matrix for rapid evaluation approach selection:
 | **Low Stakes + High Volume**    | Automated                 | Open Source       | $50-300        |
 | **Low Stakes + Low Volume**     | Basic Automated           | Simple Tools      | $25-150        |
 
+> 💡 **Need specific metrics?** See the [Metrics Selection Guide](metrics-selection-guide.md) for detailed metric catalogs and implementation resources.
+
 ## 🚀 Implementation Quick Start
 
 ### Immediate Next Steps (Choose Your Path)
@@ -467,5 +469,11 @@ Before finalizing your evaluation approach, verify:
 - **Quality Critical**: Invest in human evaluation early
 - **Scale Uncertain**: Start simple, plan for growth
 - **Domain Complex**: Engage experts from the beginning
+
+## 📖 Related Resources
+
+- **[Metrics Selection Guide](metrics-selection-guide.md)**: Detailed metric catalog and selection framework
+- **[Quick Assessment Tool](quick-assessment-tool.md)**: Rapid evaluation readiness check
+- **[Red Flag Checklist](red-flag-checklist.md)**: Common evaluation pitfalls to avoid
 
 This wizard provides a systematic way to select evaluation approaches that match your specific context and constraints while providing a clear path forward.

@@ -1,15 +1,17 @@
-# LLM Evaluation Metrics Selection Guide
+# Metrics Selection Reference Guide
 
 ## How to Use This Guide
 
-This guide helps you select the right evaluation metrics for your LLM application. Rather than using every metric, choose a focused set based on your:
+This reference guide provides a comprehensive catalog of evaluation metrics and selection frameworks. Use this guide to:
 
-- **Application type** (RAG, creative writing, customer service, etc.)
-- **Risk tolerance** (safety-critical vs experimental)
-- **Resources** (automated vs human evaluation capacity)
-- **Stakeholder priorities** (user experience vs performance vs compliance)
+- **Browse available metrics** by quality dimension and implementation difficulty
+- **Understand measurement approaches** for each metric type
+- **Apply selection frameworks** to choose focused metric sets
+- **Avoid common anti-patterns** in evaluation design
 
-## Quick Start: Metric Bundles by Use Case
+> 🧭 **Need help choosing an approach?** Start with the [Evaluation Selection Wizard](evaluation-selection-wizard.md) for interactive guidance.
+
+## Metric Bundles by Use Case
 
 | Use Case                     | Essential Metrics                                                 | Additional Metrics                                               | When You Have More Resources                                |
 | ---------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -18,6 +20,8 @@ This guide helps you select the right evaluation metrics for your LLM applicatio
 | **Creative Content**         | • Coherence Score<br>• Creativity Rating<br>• Safety Score        | • Semantic Diversity<br>• Originality<br>• Readability           | • Human aesthetic evaluation<br>• Brand alignment           |
 | **Analysis & Summarization** | • Factual Correctness<br>• Information Coverage<br>• Conciseness  | • Source Attribution<br>• Readability<br>• Coherence             | • Expert domain validation<br>• Comprehensive fact-checking |
 | **Code Generation**          | • Task Completion<br>• Correctness<br>• Safety (security)         | • Code Quality<br>• Efficiency<br>• Documentation                | • Expert review<br>• Performance testing                    |
+
+> 💡 **Implementation guidance:** See the [Evaluation Selection Wizard](evaluation-selection-wizard.md) for detailed setup instructions and budget estimates.
 
 ## Complete Metrics Catalog
 
@@ -94,12 +98,18 @@ Use this checklist to ensure comprehensive evaluation coverage for your applicat
 - **Medium resources:** Add LLM-as-judge evaluation
 - **High resources:** Include human evaluation for subjective metrics
 
-### Step 3: Plan Your Implementation
+### Step 3: Select Your Metric Set
 
-1. **Week 1-2:** Implement basic automated metrics (task success, response time, safety)
-2. **Week 3-4:** Add core quality metrics (factual correctness, coherence)
-3. **Month 2:** Add specialized metrics based on your use case
-4. **Month 3+:** Refine with human evaluation and advanced metrics
+1. **Choose 2-3 core metrics** from the quality dimensions table
+2. **Add 1-2 use case-specific metrics** from the bundles above
+3. **Include 1 safety metric** (always recommended)
+4. **Plan for 1 user feedback metric** (essential for improvement)
+
+### Step 4: Validate Your Selection
+
+- [ ] **Coverage check:** Use the Quality Dimension Checklist below
+- [ ] **Resource check:** Ensure implementation difficulty fits your capacity
+- [ ] **Business alignment:** Metrics directly support your success criteria
 
 ## Anti-Patterns to Avoid
 
@@ -131,20 +141,11 @@ Use this checklist to ensure comprehensive evaluation coverage for your applicat
 - **Internal Reviews**: Subject matter expert panels
 - **User Feedback**: Built-in rating systems, surveys
 
-### Quick Implementation Checklist
+## 📖 Related Resources
 
-**Week 1 Setup:**
+- **[Evaluation Selection Wizard](evaluation-selection-wizard.md)**: Interactive approach selection with detailed implementation plans
+- **[LLM Quality Mapping](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive metric definitions and thresholds
+- **[Red Flag Checklist](red-flag-checklist.md)**: Common evaluation mistakes to avoid
+- **[Quick Assessment Tool](quick-assessment-tool.md)**: Rapid evaluation readiness check
 
-- [ ] Define success criteria for your primary use case
-- [ ] Implement basic automated metrics (response time, safety)
-- [ ] Set up user feedback collection (thumbs up/down)
-- [ ] Establish baseline measurements
-
-**Month 1 Expansion:**
-
-- [ ] Add LLM-as-judge evaluation for key quality dimensions
-- [ ] Implement use case-specific metrics from the bundles above
-- [ ] Create evaluation dashboard for monitoring
-- [ ] Set up A/B testing framework for improvements
-
-This guide transforms evaluation from a compliance exercise into a strategic tool for continuous improvement.
+This reference guide provides the foundational knowledge to select metrics strategically rather than comprehensively.
