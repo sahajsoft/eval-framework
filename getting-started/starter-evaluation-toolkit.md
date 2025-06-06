@@ -435,4 +435,29 @@ evaluation:
 - [ ] Create evaluation result analysis
 - [ ] Plan for next stage of evaluation maturity
 
+## 🚀 Next Steps
+
+**Ready to advance your evaluation system?**
+
+1. **[Master Implementation Roadmap](../implementation-guides/master-roadmap.md)**: Plan your long-term evaluation strategy
+2. **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Advanced evaluation techniques and patterns
+3. **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive quality framework for optimization
+
+## 📖 Related Framework Resources
+
+### **Advanced Planning & Strategy**
+- **[Master Implementation Roadmap](../implementation-guides/master-roadmap.md)**: Long-term evaluation strategy and specialized templates
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Task-specific advanced metric selection *(Primary Authority)*
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive framework for optimization
+
+### **Implementation & Scaling**
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Advanced evaluation techniques and patterns
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Vendor selection for scaling *(Definitive Source)*
+- **[Automation Templates](../automation-templates/pipeline-templates.md)**: Production deployment configurations
+
+### **Assessment & Selection**
+- **[Quick Assessment Tool](quick-assessment-tool.md)**: Reassess your needs as you mature (2 minutes)
+- **[Evaluation Selection Wizard](evaluation-selection-wizard.md)**: Select advanced metrics and approaches
+- **[Cost-Benefit Calculator](cost-benefit-calculator.md)**: Track ROI and optimize budget allocation
+
 This starter toolkit ensures teams can begin with high-impact, low-effort evaluations and build toward comprehensive evaluation systems that drive real business value.

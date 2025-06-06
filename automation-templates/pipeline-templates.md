@@ -4,6 +4,8 @@
 
 This document provides production-ready templates for automated LLM evaluation pipelines, including configuration files, code templates, deployment scripts, and monitoring setups. These templates enable rapid deployment of evaluation systems across different environments and use cases.
 
+**🔗 Related Resources**: [Implementation Guides](../implementation-guides/evaluation-approaches.md) | [Tool Matrix](../implementation-guides/tool-comparison-matrix.md) | [Master Roadmap](../implementation-guides/master-roadmap.md) | [Decision Trees](../decision-trees/metric-selection-by-task.md)
+
 ## 1. Pipeline Architecture Templates
 
 ### 1.1 Basic Evaluation Pipeline
@@ -1113,5 +1115,22 @@ class TestPerformance:
         # Assert reasonable memory usage
         assert memory_increase < 500, f"Memory increase {memory_increase:.2f}MB too high"
 ```
+
+## 📖 Related Framework Resources
+
+### **Before Pipeline Development**
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Select appropriate metrics for automation *(Primary Authority)*
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Understand automated evaluation approaches
+- **[Master Roadmap](../implementation-guides/master-roadmap.md)**: Plan deployment timelines and phases
+
+### **Tool & Technology Selection**
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Select monitoring and automation tools *(Definitive Source)*
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Understand what each automated metric measures
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: Budget for infrastructure and operational costs
+
+### **Getting Started Resources**
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Begin with simple automated metrics
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Determine appropriate automation scope
+- **[Human Evaluation Guidelines](../annotation-templates/human-evaluation-guidelines.md)**: Integrate human evaluation into automated pipelines
 
 This comprehensive set of automated evaluation pipeline templates provides a production-ready foundation for implementing LLM evaluation systems across different scales and requirements.

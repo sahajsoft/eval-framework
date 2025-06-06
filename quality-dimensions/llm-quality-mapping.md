@@ -4,6 +4,8 @@
 
 This framework provides a comprehensive mapping of quality dimensions for LLM generative tasks, with specific considerations for different model types, deployment contexts, and evaluation approaches. Each dimension includes measurement strategies, target benchmarks, and implementation priorities.
 
+**🔗 Related Resources**: [Decision Trees](../decision-trees/metric-selection-by-task.md) | [Implementation Guides](../implementation-guides/evaluation-approaches.md) | [Evaluation Wizard](../getting-started/evaluation-selection-wizard.md) | [Tool Matrix](../implementation-guides/tool-comparison-matrix.md)
+
 ## Core Quality Dimensions
 
 ### 1. Accuracy & Factualness
@@ -316,65 +318,41 @@ Target: >0.95 for factual applications
 
 ## Implementation Roadmap
 
-### Phase 1: Foundation (Weeks 1-4)
-
-**Priority**: Safety, Accuracy, Basic Functionality
-
-- Deploy toxicity and safety classifiers
-- Implement basic accuracy checking
-- Set up latency monitoring
-- Establish user feedback collection
-
-### Phase 2: Quality Enhancement (Weeks 5-12)
-
-**Priority**: User Experience and Content Quality
-
-- Add coherence and style evaluation
-- Implement instruction following metrics
-- Deploy LLM-as-judge systems
-- Enhance RAG-specific metrics
-
-### Phase 3: Optimization (Weeks 13-24)
-
-**Priority**: Efficiency and Advanced Metrics
-
-- Optimize cost-quality tradeoffs
-- Implement advanced bias detection
-- Deploy continuous monitoring
-- Add domain-specific metrics
+For detailed implementation guidance including timelines, budgets, and success criteria, see the [Master Implementation Roadmap](../implementation-guides/master-roadmap.md).
 
 ## Quality Dimension Weighting Guidelines
 
-### By Application Type
+For comprehensive metric selection and weighting guidance tailored to specific tasks and contexts, see the [Metric Selection Decision Trees](../decision-trees/metric-selection-by-task.md) which provides:
 
-**Customer Support**:
+- **Task-specific metric prioritization** for Q&A, RAG, content generation, code generation, and specialized tasks
+- **Budget allocation guidelines** by application type and risk level  
+- **Implementation decision frameworks** with specific weighting recommendations
+- **Quick reference tables** for common use cases
 
-- Safety: 25%, Helpfulness: 25%, Accuracy: 20%, Latency: 15%, Coherence: 15%
+### Quick Reference by Application Type
 
-**Content Creation**:
+| Application Type | Primary Authority | Key Focus Areas |
+|------------------|-------------------|-----------------|
+| **Customer Support** | [Q&A Metrics Path](../decision-trees/metric-selection-by-task.md#qa-systems-metrics-path) | Accuracy, Relevance, Safety |
+| **Content Creation** | [Creative Metrics Path](../decision-trees/metric-selection-by-task.md#creative-writing-metrics-path) | Creativity, Style, Coherence |
+| **Document Q&A (RAG)** | [RAG Metrics Path](../decision-trees/metric-selection-by-task.md#rag-metrics-path) | Faithfulness, Accuracy, Context Quality |
+| **Code Generation** | [Code Metrics Path](../decision-trees/metric-selection-by-task.md#code-generation-metrics-path) | Correctness, Security, Efficiency |
 
-- Creativity: 25%, Style: 25%, Coherence: 20%, Safety: 15%, Instruction: 15%
+## 📖 Related Framework Resources
 
-**Document Q&A (RAG)**:
+### **Metric Selection & Implementation**
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Task-specific metric selection with budget allocation *(Primary Authority)*
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Step-by-step setup instructions for each evaluation approach
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Detailed tool selection and vendor guidance
 
-- Faithfulness: 30%, Accuracy: 25%, Context Quality: 20%, Relevance: 15%, Latency: 10%
+### **Getting Started & Planning**
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Interactive guidance for selecting approaches
+- **[Quick Assessment Tool](../getting-started/quick-assessment-tool.md)**: 2-minute evaluation readiness check
+- **[Master Roadmap](../implementation-guides/master-roadmap.md)**: Strategic planning with specialized templates
 
-**Code Generation**:
-
-- Correctness: 40%, Security: 25%, Efficiency: 15%, Style: 10%, Documentation: 10%
-
-### By Deployment Context
-
-**Production Systems**:
-
-- Emphasize Safety (30%), Reliability (25%), Performance (25%)
-
-**Development/Testing**:
-
-- Focus on Quality (40%), Iteration Speed (30%), Debugging (30%)
-
-**Research Applications**:
-
-- Prioritize Accuracy (35%), Novel Capabilities (30%), Benchmarking (35%)
+### **Practical Implementation**
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Day 1 implementation with code examples
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: ROI analysis and budget optimization
+- **[Human Evaluation Guidelines](../annotation-templates/human-evaluation-guidelines.md)**: Standardized annotation templates
 
 This quality dimension mapping provides a comprehensive framework for understanding, measuring, and optimizing LLM performance across diverse applications and contexts.

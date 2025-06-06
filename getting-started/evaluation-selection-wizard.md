@@ -235,6 +235,7 @@ implementation_plan:
 tools_needed: ["RAGAS", "Citation verification", "Semantic search"]
 monthly_budget: "$400-1500"
 setup_time: "2-3 weeks"
+tool_selection: "See Tool Comparison Matrix for detailed vendor selection"
 ```
 
 **For Moderate Verification + Dynamic Content:**
@@ -470,10 +471,32 @@ Before finalizing your evaluation approach, verify:
 - **Scale Uncertain**: Start simple, plan for growth
 - **Domain Complex**: Engage experts from the beginning
 
-## 📖 Related Resources
+## 🚀 Next Steps  
 
-- **[Metrics Selection Guide](metrics-selection-guide.md)**: Detailed metric catalog and selection framework
-- **[Quick Assessment Tool](quick-assessment-tool.md)**: Rapid evaluation readiness check
-- **[Red Flag Checklist](red-flag-checklist.md)**: Common evaluation pitfalls to avoid
+**Ready to implement?** Choose your next step:
+
+1. **[Starter Evaluation Toolkit](starter-evaluation-toolkit.md)**: Get hands-on with day 1 implementation
+2. **[Master Implementation Roadmap](../implementation-guides/master-roadmap.md)**: Plan your long-term evaluation strategy
+3. **[Cost-Benefit Calculator](cost-benefit-calculator.md)**: Calculate ROI and justify your evaluation investment
+
+## 📖 Related Framework Resources
+
+### **Implementation & Deployment**
+- **[Starter Evaluation Toolkit](starter-evaluation-toolkit.md)**: Day 1 implementation with code examples
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Detailed technical setup instructions
+- **[Automation Templates](../automation-templates/pipeline-templates.md)**: Production-ready deployment configurations
+
+### **Tool & Vendor Selection**
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Comprehensive vendor selection and platform guidance *(Definitive Source)*
+- **[Cost-Benefit Calculator](cost-benefit-calculator.md)**: ROI analysis and budget optimization
+
+### **Strategic Planning**
+- **[Master Implementation Roadmap](../implementation-guides/master-roadmap.md)**: Long-term planning with specialized templates
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Task-specific metric selection guidance *(Primary Authority)*
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive quality framework
+
+### **Quick Assessment**
+- **[Quick Assessment Tool](quick-assessment-tool.md)**: 2-minute evaluation readiness check
+- **[Human Evaluation Guidelines](../annotation-templates/human-evaluation-guidelines.md)**: Standardized annotation workflows
 
 This wizard provides a systematic way to select evaluation approaches that match your specific context and constraints while providing a clear path forward.

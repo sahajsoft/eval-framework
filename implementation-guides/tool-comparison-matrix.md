@@ -4,6 +4,8 @@
 
 This comprehensive comparison helps you select the right evaluation tools based on your specific use case, budget, and technical requirements. Each tool is evaluated across multiple dimensions with specific recommendations for different scenarios.
 
+**🔗 Related Resources**: [Implementation Guides](evaluation-approaches.md) | [Cost Calculator](../getting-started/cost-benefit-calculator.md) | [Master Roadmap](master-roadmap.md) | [Decision Trees](../decision-trees/metric-selection-by-task.md)
+
 ## 🛠️ Tool Categories Overview
 
 ### Category 1: Safety & Content Moderation
@@ -657,5 +659,23 @@ What's your primary need?
 5. **Human Eval**: Scale AI for highest quality
 
 **Total**: $3,000-10,000/month
+
+## 📖 Related Framework Resources
+
+### **Before Tool Selection**
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Determine required metrics before selecting tools *(Primary Authority)*
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: Analyze budget requirements and ROI projections
+- **[Quick Assessment Tool](../getting-started/quick-assessment-tool.md)**: Understand your evaluation needs (2 minutes)
+
+### **Implementation & Deployment**
+- **[Implementation Guides](evaluation-approaches.md)**: Technical setup instructions for selected tools
+- **[Master Roadmap](master-roadmap.md)**: Strategic planning with tool integration timelines
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Quick start code examples
+
+### **Specialized Guidance**
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Interactive tool selection for complex scenarios
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Understand what each tool category measures
+- **[Human Evaluation Guidelines](../annotation-templates/human-evaluation-guidelines.md)**: Setup for human evaluation platforms
+- **[Automation Templates](../automation-templates/pipeline-templates.md)**: Production deployment configurations
 
 This tool comparison matrix provides comprehensive guidance for selecting the right evaluation tools based on specific needs, budget constraints, and technical requirements.

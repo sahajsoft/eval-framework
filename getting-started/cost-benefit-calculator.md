@@ -4,6 +4,8 @@
 
 This calculator helps you estimate the ROI of evaluation investments by comparing costs against potential benefits. Use the worksheets below to justify evaluation spending and optimize your budget allocation.
 
+**🔗 Related Resources**: [Decision Trees](../decision-trees/metric-selection-by-task.md) | [Tool Matrix](../implementation-guides/tool-comparison-matrix.md) | [Master Roadmap](../implementation-guides/master-roadmap.md) | [Quick Assessment](quick-assessment-tool.md)
+
 ## 📊 Quick ROI Calculator
 
 ### Step 1: Estimate Your Risk Exposure (Without Evaluation)
@@ -198,23 +200,23 @@ Payback: 2.5 months
 
 **High-Risk Applications (Medical, Legal, Financial):**
 
-- 70% on human expert evaluation
-- 20% on LLM-as-judge verification
-- 10% on automated safety checks
+- 60-70% on human expert evaluation
+- 20-30% on LLM-as-judge verification
+- 10-20% on automated safety checks
 - Target: >99% accuracy, <1% risk events
 
 **Medium-Risk Applications (Business-Critical):**
 
-- 40% on LLM-as-judge evaluation
-- 35% on automated metrics
-- 25% on human sampling
+- 30-40% on human evaluation
+- 40-50% on LLM-as-judge evaluation
+- 20-30% on automated metrics
 - Target: >95% accuracy, <5% risk events
 
 **Low-Risk Applications (Internal Tools):**
 
-- 60% on automated metrics
-- 30% on LLM-as-judge
-- 10% on human spot checks
+- 10-20% on human evaluation
+- 30-40% on LLM-as-judge
+- 50-60% on automated metrics
 - Target: >90% accuracy, <10% risk events
 
 ### Cost Optimization Strategies
@@ -225,6 +227,7 @@ Payback: 2.5 months
 - Budget: 30% of total evaluation budget
 - Tools: Open-source safety models, basic monitoring
 - Expected ROI: 300-500%
+- Cost range: $500-2,000/month
 
 **Phase 2: Quality Improvement (Months 3-4)**
 
@@ -232,6 +235,7 @@ Payback: 2.5 months
 - Budget: 40% of total evaluation budget
 - Tools: LLM-as-judge, user feedback systems
 - Expected ROI: 200-400%
+- Cost range: $1,500-4,000/month
 
 **Phase 3: Optimization (Months 5-6)**
 
@@ -239,6 +243,28 @@ Payback: 2.5 months
 - Budget: 30% of total evaluation budget
 - Tools: Advanced analytics, A/B testing
 - Expected ROI: 150-300%
+- Cost range: $1,000-3,000/month
+
+### Budget Planning by Template
+
+**Startup MVP Budget:**
+- Month 1-2: $200-400/month
+- Month 3-6: $300-600/month
+- Total 6-month: $1,500-3,000
+
+**Enterprise Rollout Budget:**
+- Month 1-2: $2,000-10,000/month
+- Month 3-12: $5,000-15,000/month
+- Total 12-month: $50,000-150,000
+
+**Research Project Budget:**
+- Month 1-9: $200-1,000/month
+- Total project: $2,000-8,000
+
+**Emergency Response Budget:**
+- Week 1: $2,000-5,000
+- Week 2: $3,000-8,000
+- Total crisis response: $5,000-15,000
 
 ## 📈 ROI Tracking Template
 
@@ -316,4 +342,114 @@ Payback Period Achieved: ___ months
 - User satisfaction increase from **_% to _**%
 - Cost reduction of $\_**_/month by month _**
 
-This calculator provides concrete financial justification for evaluation investments while helping optimize budget allocation across different evaluation approaches.
+## 📊 Comprehensive Cost Analysis by Approach
+
+### Automated Evaluation Costs
+
+| Metric Type         | Cost per 1000 evaluations | Latency | Accuracy | Best Use Case |
+| ------------------- | ------------------------- | ------- | -------- | ------------- |
+| BLEU/ROUGE          | $0.01                     | <1s     | Medium   | Text quality |
+| BERTScore           | $0.05                     | 2-5s    | High     | Semantic similarity |
+| Semantic Similarity | $0.03                     | 1-3s    | High     | Relevance |
+| Grammar Checking    | $0.02                     | <1s     | Medium   | Language quality |
+| Toxicity Detection  | $0.01                     | <1s     | High     | Safety |
+| Readability Metrics | $0.01                     | <1s     | Medium   | User experience |
+
+**Monthly Cost Estimates** (10K evaluations):
+- Basic metrics: $50-100
+- Advanced semantic metrics: $200-500
+- Complete automated suite: $300-800
+
+### LLM-as-Judge Costs
+
+| Model             | Cost per evaluation | Quality | Speed    | Reliability |
+| ----------------- | ------------------- | ------- | -------- | ----------- |
+| GPT-4 Turbo       | $0.03-0.05          | Highest | Medium   | Very High   |
+| GPT-3.5 Turbo     | $0.01-0.02          | High    | Fast     | High        |
+| Claude 3 Opus     | $0.04-0.06          | Highest | Medium   | Very High   |
+| Claude 3 Sonnet   | $0.02-0.03          | High    | Fast     | High        |
+| Local Models (7B) | $0.001-0.005        | Medium  | Variable | Medium      |
+| Local Models (13B)| $0.002-0.008        | High    | Slower   | Medium-High |
+
+**Monthly Cost Estimates** (10K evaluations):
+- GPT-3.5 based: $100-200
+- GPT-4 based: $300-500
+- Claude 3 based: $200-600
+- Multi-judge consensus: $400-800
+- Hybrid approach: $200-400
+
+### Human Evaluation Costs
+
+| Annotation Type    | Cost per evaluation | Time per task | Quality     | Expertise Level |
+| ------------------ | ------------------- | ------------- | ----------- | --------------- |
+| Expert Evaluation  | $5-15               | 10-30 min     | Highest     | Domain expert   |
+| Trained Annotators | $2-5                | 5-15 min      | High        | Trained staff   |
+| Crowd Workers      | $0.50-2             | 2-8 min       | Medium      | General public  |
+| Student Annotators | $1-3                | 8-20 min      | Medium-High | Academic level  |
+
+**Quality Control Costs** (additional):
+- Training materials: $1000-5000 one-time
+- Quality monitoring: 10-20% of annotation budget
+- Inter-rater reliability testing: $500-2000
+- Golden standard creation: $1000-3000
+
+**Monthly Cost Estimates** (1K evaluations):
+- Expert evaluation: $5,000-15,000
+- Professional annotators: $2,000-5,000
+- Crowd sourcing: $500-2,000
+- Student workers: $1,000-3,000
+
+### Task-Specific Budget Recommendations
+
+| Use Case         | Evaluation Mix                          | Monthly Budget (10K evals) | Key Metrics Priority          |
+| ---------------- | --------------------------------------- | -------------------------- | ----------------------------- |
+| Customer Support | 40% Human, 40% LLM-Judge, 20% Auto     | $2,000-4,000              | Accuracy, Relevance, Safety   |
+| Content Creation | 60% Human, 30% LLM-Judge, 10% Auto     | $3,000-6,000              | Creativity, Style, Coherence  |
+| Code Generation  | 30% Human, 30% LLM-Judge, 40% Auto     | $1,500-3,000              | Execution, Correctness, Security |
+| Document Q&A     | 35% Human, 45% LLM-Judge, 20% Auto     | $2,200-4,500              | Faithfulness, Accuracy, Citations |
+| General Chat     | 50% Human, 35% LLM-Judge, 15% Auto     | $2,500-5,000              | Helpfulness, Safety, Coherence |
+
+### ROI Benchmarks by Industry
+
+**Technology Companies:**
+- Typical ROI: 300-800%
+- Payback period: 2-6 months
+- Key benefits: Reduced support costs, improved user satisfaction
+
+**Financial Services:**
+- Typical ROI: 500-1200%
+- Payback period: 1-4 months
+- Key benefits: Compliance cost avoidance, risk reduction
+
+**Healthcare:**
+- Typical ROI: 200-600%
+- Payback period: 3-8 months
+- Key benefits: Patient safety, accuracy improvements
+
+**E-commerce:**
+- Typical ROI: 400-1000%
+- Payback period: 2-5 months
+- Key benefits: Conversion optimization, customer experience
+
+**Education:**
+- Typical ROI: 250-500%
+- Payback period: 4-10 months
+- Key benefits: Learning outcomes, content quality
+
+## 📖 Related Framework Resources
+
+### **Planning & Strategy**
+- **[Quick Assessment Tool](quick-assessment-tool.md)**: Determine your evaluation needs before cost analysis (2 minutes)
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Select metrics before estimating costs *(Primary Authority)*
+- **[Master Roadmap](../implementation-guides/master-roadmap.md)**: Implementation timelines that align with budget planning
+
+### **Tool & Vendor Selection**
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Detailed vendor costs and budget recommendations *(Definitive Source)*
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Technical complexity that impacts implementation costs
+
+### **Implementation Resources**
+- **[Evaluation Selection Wizard](evaluation-selection-wizard.md)**: Interactive approach selection with cost considerations
+- **[Starter Evaluation Toolkit](starter-evaluation-toolkit.md)**: Low-cost day 1 implementation options
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Understand what you're investing in measuring
+
+This comprehensive calculator provides concrete financial justification for evaluation investments while helping optimize budget allocation across different evaluation approaches based on your specific use case, risk tolerance, and quality requirements.

@@ -126,9 +126,10 @@ Add up points from all 5 questions: ****\_** / 44 points**
 
 ### Tools & Technologies:
 
-- Professional human evaluation platform (Scale AI, Labelbox)
-- Enterprise LLM APIs (GPT-4, Claude-3 Opus)
-- Real-time monitoring (DataDog, Prometheus)
+See [Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md) for detailed selection guidance:
+- Professional human evaluation: Scale AI, Labelbox
+- Enterprise LLM APIs: GPT-4, Claude-3 Opus  
+- Real-time monitoring: DataDog, Prometheus
 - A/B testing framework
 
 ---
@@ -158,9 +159,10 @@ Add up points from all 5 questions: ****\_** / 44 points**
 
 ### Tools & Technologies:
 
-- LLM evaluation APIs (OpenAI, Anthropic)
-- Open-source safety models (HuggingFace)
-- Analytics platform (Mixpanel, Amplitude)
+See [Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md) for detailed selection guidance:
+- LLM evaluation APIs: OpenAI, Anthropic
+- Open-source safety models: HuggingFace
+- Analytics platform: Mixpanel, Amplitude
 - Basic A/B testing
 
 ---
@@ -265,13 +267,27 @@ Add up points from all 5 questions: ****\_** / 44 points**
 - When changing business requirements or use cases
 - After collecting substantial user feedback data
 
-## 📞 Getting Additional Help
+## 📞 Next Steps
 
-**If your assessment results seem unclear:**
+**Based on your assessment score:**
 
-1. **High Scores (30+)**: Consult with evaluation specialists immediately
-2. **Medium Scores (15-29)**: Review the detailed evaluation-selection-wizard.md
-3. **Low Scores (5-14)**: Start with starter-evaluation-toolkit.md
-4. **Any Score**: Join evaluation community forums for peer guidance
+1. **High Scores (30+)**: Move to [Master Implementation Roadmap](../implementation-guides/master-roadmap.md) for enterprise planning
+2. **Medium Scores (15-29)**: Continue with [Evaluation Selection Wizard](evaluation-selection-wizard.md) for detailed guidance
+3. **Low Scores (5-14)**: Start with [Starter Evaluation Toolkit](starter-evaluation-toolkit.md) for day 1 implementation
+4. **Any Score**: Use [Cost-Benefit Calculator](cost-benefit-calculator.md) to justify your evaluation investment
+
+## 🔗 Related Framework Resources
+
+### **Next Steps Based on Your Score**
+- **[Evaluation Selection Wizard](evaluation-selection-wizard.md)**: Interactive guidance for detailed metric selection
+- **[Starter Evaluation Toolkit](starter-evaluation-toolkit.md)**: Day 1 implementation with code examples
+- **[Master Implementation Roadmap](../implementation-guides/master-roadmap.md)**: Long-term strategic planning
+
+### **Supporting Resources**
+- **[Cost-Benefit Calculator](cost-benefit-calculator.md)**: ROI analysis and budget planning
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Task-specific metric selection *(Primary Authority)*
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Vendor and platform selection *(Definitive Source)*
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive metric definitions
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Technical setup instructions
 
 This quick assessment provides immediate direction while the detailed framework materials offer comprehensive implementation guidance.

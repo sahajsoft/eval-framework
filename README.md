@@ -6,7 +6,7 @@ This comprehensive evaluation framework for Large Language Model (LLM) generativ
 
 ## Framework Components
 
-### 📊 [Decision Trees for Metric Selection](decision-trees/metric-selection-by-task.md)
+### 📊 [Decision Trees for Metric Selection](decision-trees/metric-selection-by-task.md) *(Primary Authority)*
 
 Systematic guidance for selecting appropriate evaluation metrics based on:
 
@@ -18,9 +18,11 @@ Systematic guidance for selecting appropriate evaluation metrics based on:
 **Key Features**:
 
 - Prioritized metric selection paths
-- Budget allocation guidelines
+- Budget allocation guidelines  
 - Quick reference tables for common use cases
 - Customization frameworks for domain-specific needs
+
+**Related**: [Quality Dimensions](quality-dimensions/llm-quality-mapping.md) | [Cost Calculator](getting-started/cost-benefit-calculator.md) | [Tool Matrix](implementation-guides/tool-comparison-matrix.md)
 
 ### 🎯 [Quality Dimension Mapping](quality-dimensions/llm-quality-mapping.md)
 
@@ -39,6 +41,8 @@ Comprehensive mapping of quality dimensions with LLM-specific considerations:
 - **Context Precision & Recall**: Retrieval quality assessment
 - **Answer Faithfulness**: Grounding in provided context
 - **Performance & Efficiency**: Latency, cost optimization
+
+**Related**: [Decision Trees](decision-trees/metric-selection-by-task.md) | [Implementation Guides](implementation-guides/evaluation-approaches.md) | [Evaluation Wizard](getting-started/evaluation-selection-wizard.md)
 
 ### 🛠️ [Implementation Guides](implementation-guides/evaluation-approaches.md)
 
@@ -71,6 +75,8 @@ Step-by-step implementation instructions for different evaluation approaches:
 - Adaptive evaluation strategies
 - Production monitoring systems
 
+**Related**: [Tool Matrix](implementation-guides/tool-comparison-matrix.md) | [Master Roadmap](implementation-guides/master-roadmap.md) | [Starter Toolkit](getting-started/starter-evaluation-toolkit.md)
+
 ### 📝 [Human Annotation Templates](annotation-templates/human-evaluation-guidelines.md)
 
 Standardized guidelines and templates for human evaluation:
@@ -88,6 +94,8 @@ Standardized guidelines and templates for human evaluation:
 - Golden standard creation
 - Annotator training programs
 - Performance monitoring systems
+
+**Related**: [Implementation Guides](implementation-guides/evaluation-approaches.md) | [Tool Matrix](implementation-guides/tool-comparison-matrix.md) | [Cost Calculator](getting-started/cost-benefit-calculator.md)
 
 ### 🤖 [Automation Templates](automation-templates/pipeline-templates.md)
 
@@ -112,6 +120,8 @@ Production-ready templates for automated evaluation systems:
 - Alert rule configurations
 - Performance testing suites
 
+**Related**: [Implementation Guides](implementation-guides/evaluation-approaches.md) | [Tool Matrix](implementation-guides/tool-comparison-matrix.md) | [Master Roadmap](implementation-guides/master-roadmap.md)
+
 ## Quick Start Guide
 
 ### 1. Determine Your Use Case
@@ -123,6 +133,8 @@ Use the [Decision Tree](decision-trees/metric-selection-by-task.md) to identify:
 - Available resources
 - Evaluation timeline
 
+**Quick Start**: [Quick Assessment Tool](getting-started/quick-assessment-tool.md) for instant recommendations
+
 ### 2. Select Quality Dimensions
 
 Reference the [Quality Mapping](quality-dimensions/llm-quality-mapping.md) to:
@@ -130,6 +142,8 @@ Reference the [Quality Mapping](quality-dimensions/llm-quality-mapping.md) to:
 - Prioritize relevant dimensions
 - Set target benchmarks
 - Understand LLM-specific considerations
+
+**Interactive Guide**: [Evaluation Selection Wizard](getting-started/evaluation-selection-wizard.md) for detailed guidance
 
 ### 3. Choose Evaluation Approach
 
@@ -139,12 +153,17 @@ Follow the [Implementation Guide](implementation-guides/evaluation-approaches.md
 - Understand cost implications
 - Plan deployment strategy
 
+**Tool Selection**: [Tool Comparison Matrix](implementation-guides/tool-comparison-matrix.md) for vendor and platform guidance
+
 ### 4. Implement Evaluation System
 
 Use provided templates:
 
 - [Human evaluation templates](annotation-templates/human-evaluation-guidelines.md) for manual assessment
 - [Automation templates](automation-templates/pipeline-templates.md) for scalable systems
+- [Starter Evaluation Toolkit](getting-started/starter-evaluation-toolkit.md) for day 1 implementation
+
+**Strategic Planning**: [Master Implementation Roadmap](implementation-guides/master-roadmap.md) for long-term planning
 
 ## Framework Benefits
 
@@ -177,63 +196,21 @@ Based on research showing:
 
 ## Implementation Roadmap
 
-### Phase 1: Foundation (Weeks 1-4)
+For detailed implementation guidance, see the [Master Implementation Roadmap](implementation-guides/master-roadmap.md) which provides four specialized templates:
 
-**Priority**: Safety, Accuracy, Basic Functionality
-
-- [ ] Deploy toxicity and safety classifiers
-- [ ] Implement basic accuracy checking
-- [ ] Set up latency monitoring
-- [ ] Establish user feedback collection
-
-### Phase 2: Quality Enhancement (Weeks 5-12)
-
-**Priority**: User Experience and Content Quality
-
-- [ ] Add coherence and style evaluation
-- [ ] Implement instruction following metrics
-- [ ] Deploy LLM-as-judge systems
-- [ ] Enhance RAG-specific metrics
-
-### Phase 3: Optimization (Weeks 13-24)
-
-**Priority**: Efficiency and Advanced Metrics
-
-- [ ] Optimize cost-quality tradeoffs
-- [ ] Implement advanced bias detection
-- [ ] Deploy continuous monitoring
-- [ ] Add domain-specific metrics
+- **Startup MVP (0-6 months)**: Quick deployment for small teams
+- **Enterprise Rollout (0-12 months)**: Comprehensive enterprise implementation  
+- **Research Project (0-9 months)**: Academic research methodology
+- **Emergency Response (0-2 weeks)**: Crisis resolution strategies
 
 ## Cost Analysis Summary
 
-### Evaluation Approach Costs (per 1000 evaluations)
+For comprehensive cost analysis, ROI calculations, and budget optimization guidance, see the [Cost-Benefit Calculator](getting-started/cost-benefit-calculator.md) which includes:
 
-| Approach              | Cost Range  | Quality Level | Use Case              |
-| --------------------- | ----------- | ------------- | --------------------- |
-| **Automated Metrics** | $50-800     | Medium-High   | High-volume screening |
-| **LLM-as-Judge**      | $100-800    | High          | Balanced quality/cost |
-| **Human Evaluation**  | $500-15,000 | Highest       | High-stakes decisions |
-| **Hybrid Approach**   | $200-2,000  | Very High     | Production systems    |
-
-### Budget Allocation Guidelines
-
-**High-Stakes Applications** (Medical, Legal, Financial):
-
-- Human Evaluation: 60-70%
-- LLM-as-Judge: 20-30%
-- Automated Metrics: 10-20%
-
-**Standard Business Applications**:
-
-- Human Evaluation: 30-40%
-- LLM-as-Judge: 40-50%
-- Automated Metrics: 20-30%
-
-**High-Volume Applications**:
-
-- Human Evaluation: 10-20%
-- LLM-as-Judge: 30-40%
-- Automated Metrics: 50-60%
+- **Detailed cost breakdowns** by evaluation approach and use case
+- **ROI calculators** with industry benchmarks
+- **Budget allocation guidelines** for different risk levels
+- **Use case-specific cost estimates** and optimization strategies
 
 ## Research Foundation
 
@@ -261,11 +238,32 @@ This framework is built on comprehensive research from leading AI organizations:
 
 ## Getting Started
 
-1. **Assess Your Needs**: Use the decision tree to understand your requirements
-2. **Start Small**: Begin with automated metrics for rapid iteration
-3. **Add Sophistication**: Gradually introduce LLM-judge and human evaluation
-4. **Monitor Continuously**: Implement production monitoring for ongoing quality assurance
-5. **Iterate and Improve**: Use evaluation results to drive system improvements
+Choose your entry point based on your experience and timeline:
+
+### 🚀 Quick Start (2 minutes)
+**[Quick Assessment Tool](getting-started/quick-assessment-tool.md)**: Instant recommendations based on your project characteristics
+
+### 🧭 Guided Setup (15-30 minutes)  
+**[Evaluation Selection Wizard](getting-started/evaluation-selection-wizard.md)**: Interactive guidance for selecting metrics and approaches
+
+### 🛠️ Implementation Focus (1-2 hours)
+**[Starter Evaluation Toolkit](getting-started/starter-evaluation-toolkit.md)**: Day 1 implementation with code examples
+
+### 📈 Strategic Planning (30-60 minutes)
+**[Master Implementation Roadmap](implementation-guides/master-roadmap.md)**: Long-term planning with four specialized templates
+
+## Core Use Cases
+
+This framework provides specialized guidance for four primary AI use cases:
+
+| Use Case | Primary Focus | Key Metrics | Budget Range |
+|----------|---------------|-------------|--------------|
+| **Customer Support** | User satisfaction, accuracy | Accuracy, Relevance, Safety | $2,000-4,000/month |
+| **Content Creation** | Creativity, brand alignment | Creativity, Coherence, Style | $3,000-6,000/month |
+| **Document Q&A (RAG)** | Information accuracy, grounding | Faithfulness, Accuracy, Citations | $2,200-4,500/month |
+| **Code Generation** | Functional correctness, security | Execution, Correctness, Security | $1,500-3,000/month |
+
+> **For detailed guidance on each use case**, see the [Decision Trees for Metric Selection](decision-trees/metric-selection-by-task.md).
 
 ## Support and Contribution
 

@@ -4,6 +4,8 @@
 
 This document provides comprehensive guidelines, templates, and protocols for human evaluation of LLM-generated content. It includes standardized annotation procedures, quality control measures, and task-specific evaluation frameworks.
 
+**🔗 Related Resources**: [Implementation Guides](../implementation-guides/evaluation-approaches.md) | [Tool Matrix](../implementation-guides/tool-comparison-matrix.md) | [Cost Calculator](../getting-started/cost-benefit-calculator.md) | [Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)
+
 ## 1. General Annotation Guidelines
 
 ### 1.1 Core Principles
@@ -622,5 +624,24 @@ _____________________________________________
   }
 }
 ```
+
+## 📖 Related Framework Resources
+
+### **Planning & Strategy**
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Determine when human evaluation is needed *(Primary Authority)*
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: Budget for human evaluation costs and ROI
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Understand what aspects require human judgment
+
+### **Implementation & Tools**
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Select human evaluation platforms *(Definitive Source)*
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Technical setup for human evaluation systems
+- **[Master Roadmap](../implementation-guides/master-roadmap.md)**: Integration timelines for human evaluation
+
+### **Getting Started Resources**
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Determine appropriate human evaluation scope
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Simple human feedback collection
+- **[Quick Assessment Tool](../getting-started/quick-assessment-tool.md)**: Assess if human evaluation is needed
+
+These guidelines provide the foundation for implementing reliable, scalable human evaluation as part of a comprehensive LLM evaluation strategy.
 
 This comprehensive framework provides the foundation for consistent, high-quality human evaluation of LLM systems across diverse applications and use cases.

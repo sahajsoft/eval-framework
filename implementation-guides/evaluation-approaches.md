@@ -4,6 +4,8 @@
 
 This guide provides step-by-step implementation instructions for different LLM evaluation approaches, from automated metrics to hybrid evaluation systems. Each approach includes setup instructions, code examples, cost analysis, and best practices.
 
+**🔗 Related Resources**: [Tool Matrix](tool-comparison-matrix.md) | [Master Roadmap](master-roadmap.md) | [Decision Trees](../decision-trees/metric-selection-by-task.md) | [Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)
+
 ## 1. Automated Evaluation Implementation
 
 ### 1.1 Basic Automated Metrics Setup
@@ -124,18 +126,7 @@ output_format: json
 
 ### 1.2 Cost Analysis for Automated Evaluation
 
-| Metric Type         | Cost per 1000 evaluations | Latency | Accuracy |
-| ------------------- | ------------------------- | ------- | -------- |
-| BLEU/ROUGE          | $0.01                     | <1s     | Medium   |
-| BERTScore           | $0.05                     | 2-5s    | High     |
-| Semantic Similarity | $0.03                     | 1-3s    | High     |
-| Grammar Checking    | $0.02                     | <1s     | Medium   |
-
-**Monthly Cost Estimate** (10K evaluations):
-
-- Basic metrics: $50-100
-- Advanced semantic metrics: $200-500
-- Complete automated suite: $300-800
+For detailed cost analysis including pricing breakdowns, ROI calculations, and budget optimization strategies, see the [Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md).
 
 ## 2. LLM-as-Judge Implementation
 
@@ -339,20 +330,7 @@ RAG_SPECIFIC_CRITERIA = {
 
 ### 2.2 Cost Analysis for LLM-as-Judge
 
-| Model             | Cost per evaluation | Quality | Speed    |
-| ----------------- | ------------------- | ------- | -------- |
-| GPT-4 Turbo       | $0.03-0.05          | Highest | Medium   |
-| GPT-3.5 Turbo     | $0.01-0.02          | High    | Fast     |
-| Claude 3 Opus     | $0.04-0.06          | Highest | Medium   |
-| Claude 3 Sonnet   | $0.02-0.03          | High    | Fast     |
-| Local Models (7B) | $0.001-0.005        | Medium  | Variable |
-
-**Monthly Cost Estimates** (10K evaluations):
-
-- GPT-3.5 based: $100-200
-- GPT-4 based: $300-500
-- Multi-judge consensus: $400-800
-- Hybrid approach: $200-400
+For detailed cost analysis including model comparisons, ROI calculations, and budget optimization strategies, see the [Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md).
 
 ## 3. Human Evaluation Implementation
 
@@ -550,25 +528,7 @@ You will evaluate LLM responses based on specific quality criteria. Each respons
 
 ### 3.2 Cost Analysis for Human Evaluation
 
-| Annotation Type    | Cost per evaluation | Time per task | Quality     |
-| ------------------ | ------------------- | ------------- | ----------- |
-| Expert Evaluation  | $5-15               | 10-30 min     | Highest     |
-| Trained Annotators | $2-5                | 5-15 min      | High        |
-| Crowd Workers      | $0.50-2             | 2-8 min       | Medium      |
-| Student Annotators | $1-3                | 8-20 min      | Medium-High |
-
-**Quality Control Costs** (additional):
-
-- Training materials: $1000-5000 one-time
-- Quality monitoring: 10-20% of annotation budget
-- Inter-rater reliability testing: $500-2000
-
-**Monthly Cost Estimates** (1K evaluations):
-
-- Expert evaluation: $5,000-15,000
-- Professional annotators: $2,000-5,000
-- Crowd sourcing: $500-2,000
-- Student workers: $1,000-3,000
+For detailed cost analysis including annotation type comparisons, quality control costs, and budget optimization strategies, see the [Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md).
 
 ## 4. Hybrid Evaluation Implementation
 
@@ -883,5 +843,38 @@ async def get_evaluation_result(evaluation_id: str):
     # Implementation for retrieving stored results
     pass
 ```
+
+## Tool Selection and Integration
+
+For comprehensive tool selection guidance including detailed comparisons, pricing analysis, and use case recommendations, see the [Tool Comparison Matrix](tool-comparison-matrix.md).
+
+### Quick Tool Integration Guide
+
+| Evaluation Approach | Recommended Tools | Integration Complexity |
+|---------------------|------------------|----------------------|
+| **Automated Metrics** | RAGAS, BERTScore, HuggingFace | Low - API integration |
+| **LLM-as-Judge** | GPT-4, Claude-3, Local models | Medium - Prompt engineering |
+| **Human Evaluation** | Scale AI, Labelbox, MTurk | High - Platform setup |
+| **Hybrid Systems** | TruLens, LangSmith, Custom | High - Multi-tool coordination |
+
+## 📖 Related Framework Resources
+
+### **Planning & Selection**
+- **[Decision Trees](../decision-trees/metric-selection-by-task.md)**: Choose appropriate metrics before implementation *(Primary Authority)*
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Understand measurement strategies and benchmarks
+- **[Master Roadmap](master-roadmap.md)**: Strategic planning with specialized implementation templates
+
+### **Tool & Platform Selection**
+- **[Tool Comparison Matrix](tool-comparison-matrix.md)**: Detailed vendor comparisons and selection guidance *(Definitive Source)*
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: ROI analysis and budget optimization
+
+### **Getting Started Resources**
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Day 1 implementation with example code
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Interactive approach selection
+- **[Quick Assessment Tool](../getting-started/quick-assessment-tool.md)**: Rapid evaluation readiness check
+
+### **Production Deployment**
+- **[Automation Templates](../automation-templates/pipeline-templates.md)**: Production-ready pipeline configurations
+- **[Human Evaluation Guidelines](../annotation-templates/human-evaluation-guidelines.md)**: Standardized annotation workflows
 
 This comprehensive implementation guide provides the foundation for building robust LLM evaluation systems across different approaches, from fully automated to human-in-the-loop evaluation.

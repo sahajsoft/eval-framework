@@ -4,6 +4,8 @@
 
 This decision tree framework helps teams systematically select appropriate evaluation metrics based on task type, balancing business objectives with evaluation effectiveness. Each path prioritizes metrics that directly impact user satisfaction and system performance.
 
+**🔗 Related Resources**: [Quality Dimensions](../quality-dimensions/llm-quality-mapping.md) | [Cost Calculator](../getting-started/cost-benefit-calculator.md) | [Tool Matrix](../implementation-guides/tool-comparison-matrix.md) | [Implementation Guides](../implementation-guides/evaluation-approaches.md)
+
 ## Primary Task Classification Decision Tree
 
 ```
@@ -208,23 +210,7 @@ What is your evaluation context?
 
 ## Budget Allocation Guidelines
 
-### High-Stakes Applications (Medical, Legal, Financial)
-
-- **Human Evaluation**: 60-70%
-- **LLM-as-Judge**: 20-30%
-- **Automated Metrics**: 10-20%
-
-### Standard Business Applications
-
-- **Human Evaluation**: 30-40%
-- **LLM-as-Judge**: 40-50%
-- **Automated Metrics**: 20-30%
-
-### High-Volume/Low-Risk Applications
-
-- **Human Evaluation**: 10-20%
-- **LLM-as-Judge**: 30-40%
-- **Automated Metrics**: 50-60%
+For detailed budget allocation guidelines, cost analysis, and ROI calculations, see the [Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md).
 
 ## Implementation Decision Framework
 
@@ -273,8 +259,25 @@ What is your evaluation context?
 | ---------------- | --------------------------------- | --------------------------------------- |
 | Customer Support | Accuracy, Relevance, Safety       | 40% Human, 40% LLM-Judge, 20% Automated |
 | Content Creation | Creativity, Coherence, Style      | 60% Human, 30% LLM-Judge, 10% Automated |
-| Code Assistant   | Execution, Correctness, Security  | 30% Human, 30% LLM-Judge, 40% Automated |
+| Code Generation  | Execution, Correctness, Security  | 30% Human, 30% LLM-Judge, 40% Automated |
 | Document Q&A     | Faithfulness, Accuracy, Citations | 35% Human, 45% LLM-Judge, 20% Automated |
 | General Chat     | Helpfulness, Safety, Coherence    | 50% Human, 35% LLM-Judge, 15% Automated |
+
+## 📖 Related Framework Resources
+
+### **Implementation Support**
+- **[Starter Evaluation Toolkit](../getting-started/starter-evaluation-toolkit.md)**: Day 1 implementation with code examples
+- **[Implementation Guides](../implementation-guides/evaluation-approaches.md)**: Detailed setup instructions for each evaluation approach
+- **[Master Roadmap](../implementation-guides/master-roadmap.md)**: Long-term planning with specialized templates
+
+### **Tool & Cost Selection**
+- **[Tool Comparison Matrix](../implementation-guides/tool-comparison-matrix.md)**: Vendor selection and platform comparisons
+- **[Cost-Benefit Calculator](../getting-started/cost-benefit-calculator.md)**: ROI analysis and budget planning
+- **[Automation Templates](../automation-templates/pipeline-templates.md)**: Production-ready pipeline configurations
+
+### **Getting Started Resources**
+- **[Quick Assessment Tool](../getting-started/quick-assessment-tool.md)**: 2-minute evaluation readiness check
+- **[Evaluation Selection Wizard](../getting-started/evaluation-selection-wizard.md)**: Interactive approach selection
+- **[Quality Dimensions](../quality-dimensions/llm-quality-mapping.md)**: Comprehensive metric definitions and thresholds
 
 This decision tree framework provides systematic guidance for selecting appropriate metrics while maintaining focus on business objectives and evaluation effectiveness.
