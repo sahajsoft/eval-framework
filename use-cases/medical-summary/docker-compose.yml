@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: medical_summary_db
+    environment:
+      POSTGRES_DB: medical_summary
+      POSTGRES_USER: medical_user
+      POSTGRES_PASSWORD: medical_pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/01-create-tables.sql:/docker-entrypoint-initdb.d/01-create-tables.sql
+      - ./database/02-load-initial-data.sql:/docker-entrypoint-initdb.d/02-load-initial-data.sql
+      - ./source-data:/docker-entrypoint-initdb.d/data:ro
+      - ./database/validate-data.sql:/tmp/validate-data.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medical_user -d medical_summary"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
